@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: WaveTex
-  m_Shader: {fileID: 4800000, guid: effb2933c4d742c45ad0f896ae8ebbe7, type: 3}
+  m_Name: PBRPhong
+  m_Shader: {fileID: 4800000, guid: 1c5c348b765083f4489803c8aa7d6997, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -39,27 +39,23 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Texture: {fileID: 2800000, guid: fe445ec5fa266cb48b480399b349e93e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex2:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 0, y: 1}
+        m_Texture: {fileID: 2800000, guid: f65f7ccebfa22c14da6dfc1d2db51db6, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NoiseTex:
-        m_Texture: {fileID: 2800000, guid: bcc4b97e1d13d8947b270eda1d31aa4e, type: 3}
-        m_Scale: {x: 2, y: 2}
-        m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: d2984c4252057a041a74ac10fa8d6e1d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1427a23f07fe4b0498a8f5471db4494b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap2:
-        m_Texture: {fileID: 2800000, guid: ecee532cff2faf8419b01b579e91da25, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0435b208cc6cadc408568160cd2e0c73, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -71,32 +67,26 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AlbedoLerp: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 1
+    - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 0.414
+    - _Metallic: 0
     - _Mode: 0
-    - _NormalLerp: 0.614
+    - _NormalLerp: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 2.14
-    - _ScrollSpeed: 0.07
-    - _ScrollSpeed2: 0.13
+    - _Shininess: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Tess: 1
     - _UVSec: 0
-    - _WaveAmp: 0.09
-    - _WaveSpeed: 19.17
     - _ZWrite: 1
     m_Colors:
-    - _AvoidedObj: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.014705896, g: 0.322, b: 1, a: 0.416}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _VectorPos: {r: -21, g: 1.22, b: -18.24, a: 0}
-    - _WorldPos: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.13642465, g: 0.44117647, b: 0, a: 1}
