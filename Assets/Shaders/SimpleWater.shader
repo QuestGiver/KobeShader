@@ -2,7 +2,7 @@
 {
 	Properties
 	{
-		_Tess("Tessalation", Range(1,32)) = 4
+		//_Tess("Tessalation", Range(1,32)) = 4
 		_Color("Color", Color) = (1,1,1,1)
 		_MainTex("Albedo (RGB)", 2D) = "white" {}
 		_MainTex2("Albedo (RGB)", 2D) = "white" {}
@@ -26,7 +26,7 @@
 
 			CGPROGRAM
 			// Physically based Standard lighting model, and enable shadows on all light types
-			#pragma surface surf Standard fullforwardshadows vertex:vert tessellate:tess
+			#pragma surface surf Standard fullforwardshadows vertex:vert// tessellate:tess
 
 			// Use shader model 3.0 target, to get nicer looking lighting
 			#pragma target 3.0
@@ -42,7 +42,7 @@
 			float _WaveSpeed;
 			float _ScrollSpeed;
 			float _ScrollSpeed2;
-			uniform float _Tess;
+			//uniform float _Tess;
 			half _Glossiness;
 			half _Metallic;
 			fixed4 _Color;
@@ -53,10 +53,10 @@
 				float2 uv_MainTex2;
 				float4 worldPos;
 			};
-			float4 tess()
-			{
-				return 1;
-			}
+			//float4 tess()
+			//{
+				//return 1;
+			//}
 			/*float4 tessFixed()
 			{
 				return _Tess;
