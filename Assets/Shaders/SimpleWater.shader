@@ -26,7 +26,7 @@
 
 			CGPROGRAM
 			// Physically based Standard lighting model, and enable shadows on all light types
-			#pragma surface surf Standard fullforwardshadows  vertex:vert //tessellate:tessFixed
+			#pragma surface surf Standard fullforwardshadows vertex:vert tessellate:tess
 
 			// Use shader model 3.0 target, to get nicer looking lighting
 			#pragma target 3.0
@@ -42,25 +42,31 @@
 			float _WaveSpeed;
 			float _ScrollSpeed;
 			float _ScrollSpeed2;
-		/*	uniform float _Tess;
+			uniform float _Tess;
+			half _Glossiness;
+			half _Metallic;
+			fixed4 _Color;
 
-			float4 tessFixed()
-			{
-				return _Tess;
-			}*/
 			struct Input
 			{
 				float2 uv_MainTex;
 				float2 uv_MainTex2;
 				float4 worldPos;
 			};
+			float4 tess()
+			{
+				return 1;
+			}
+			/*float4 tessFixed()
+			{
+				return _Tess;
+			}*/
+			
 
 			
 
 
-			half _Glossiness;
-			half _Metallic;
-			fixed4 _Color;
+			
 
 			
 
